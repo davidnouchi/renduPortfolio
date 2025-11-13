@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
@@ -38,9 +38,9 @@
                     <main>
                         <div class="row">
                             <div class="column">
-                                <p>Branding | Image making</p>
-                                <h1>Studio Aline<br>Graphik</h1>
-                                <p>Des identités visuelles qui marquent les esprits</p>
+                                <p id="branding">Branding | Image making</p>
+                                <h1 id="aline">Studio Aline<br>Graphik</h1>
+                                <p id="identité">Des identités visuelles qui marquent les esprits</p>
                                 <a href="" class="btn">Demander un devis</a>
                             </div>
 
@@ -53,7 +53,7 @@
         </div>
     </Section>
 
-    <Section class="container padding">
+    <Section class="container padding" id="services">
         <h2>Services</h2>
 
         <div class="row">
@@ -97,7 +97,7 @@
         </div>
     </Section>
 
-    <Section class="container padding">
+    <Section class="container padding" id="realisations">
         <h2>Réalisations</h2>
 
         <div class="row wrap pad">
@@ -155,16 +155,15 @@
         </div>
     </section>
 
-    <Section class="container">
+    <Section class="container padding">
         <h2>Témoignages clients</h2>
 
-        <div class="row">
+        <div>
 
-            <div>
-                <p></p>
+            <div class="row">
 
-                <!-- card 2 -->
-                <div>
+                <!-- card 1 -->
+                <div class="card">
                     <p>Aline a su comprendre
                         parfaitement l’esprit de
                         mon entreprise. Le logo
@@ -174,16 +173,16 @@
                         énormément de
                         compliments !</p>
 
-                    <div>
-                        <img src="" alt="">
+                    <div class="infos">
+                        <img src="pexels-klub-boks-1437055-12560939.jpg" class="coq">
 
-                        <div>
+                        <div class="column">
                             <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
                             </div>
                             <p>Identité visuelle de
                                 marque</p>
@@ -192,8 +191,8 @@
 
                 </div>
 
-                <!-- card 3 -->
-                <div>
+                <!-- card 2 -->
+                <div class="card gap">
                     <p>Collaboration fluide et
                         professionnelle. Les
                         maquettes sont
@@ -202,39 +201,49 @@
                         être intégrées
                         directement. Bravo !</p>
 
-                    <div>
-                        <img src="" alt="">
+                    <div class="infos">
+                        <img src="pexels-klub-boks-1437055-12560939.jpg" class="coq">
 
-                        <div>
+                        <div class="column">
                             <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
                             </div>
-                            <p></p>
+                            <p>Design d’application</p>
                         </div>
                     </div>
 
                 </div>
-                <!-- card 1 -->
-                <div>
-                    <img src="" alt="">
 
-                    <div>
-                        <p>Les affiches réalisées pour notre événement ont fait sensation ! Un grand sens du détail et
-                            une excellente compréhension de notre public.</p>
-                        <div>
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                            <img src="material-symbols_star-rounded (1).png" alt="">
+                <!-- card 3 -->
+                <div class="card">
+                    <p>Les affiches réalisées
+                        pour notre événement
+                        ont fait sensation ! Un
+                        grand sens du détail et
+                        une excellente
+                        compréhension de
+                        notre public.</p>
+
+                    <div class="infos">
+                        <img src="pexels-klub-boks-1437055-12560939.jpg" class="coq">
+
+                        <div class="column">
+                            <div>
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                                <img src="material-symbols_star-rounded (1).png" alt="">
+                            </div>
+                            <p>Supports de
+                                communication</p>
                         </div>
-                        <p>Supports de
-                            communication</p>
                     </div>
+
                 </div>
             </div>
 
@@ -245,24 +254,26 @@
     </main>
 
     <footer>
-        <section class="container">
+        <section class="container width_noir padding" id="white">
             <h2>Prêts à travailler ensemble ?</h2>
 
-            <div>
-                <div>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+            <div id="row_prets">
+                <div class="column_prets">
+                    <p>Une idée, un projet, une envie de collaboration ?
+                        Contactez-nous, nous serons ravis d’en discuter et de
+                        voir comment avancer ensemble. Laissez votre contact téléphonique et je vous rappellerai</p>
+                    <div id="i">
+                        <i class="fa-brands fa-discord"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-dribbble"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-behance"></i>
                     </div>
                 </div>
-                <form class="column">
-                    <input type="text" placeholder="Nom">
-                    <input type="text" placeholder="Téléphone">
-                    <a href="">Envoyer</a>
+                <form>
+                    <input type="text" placeholder="Nom" class="form">
+                    <input type="text" placeholder="Téléphone" class="form">
+                    <a href="" id="button">Envoyer</a>
                 </form>
             </div>
         </section>
