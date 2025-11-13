@@ -5,105 +5,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 
 <body>
 
 
     <Section>
-        <div class="container">
 
-            <header>
-                <img src="" alt="">
-                <nav>
-                    <a href="">Services</a>
-                    <a href="">Réalisations</a>
-                    <a href="">Contact</a>
-                </nav>
-            </header>
-
-            <main>
+        <div class="noir">
+            <div class="container">
                 <div>
-                    <p>Branding | Image making</p>
-                    <h1>Studio Aline Graphik</h1>
-                    <p>Des identités visuelles qui marquent les esprits</p>
-                    <a href="">Demander un devis</a>
-                </div>
 
-                <div>
-                    <img src="Assets/HeaderImage.png" alt="">
-                </div>
+                    <header>
 
+                        <div>
+                            <img src="figma.png" alt="">
+                            <!--source : https://www.flaticon.com/free-icon/figma_5968705?related_id=5968704&origin=search -->
+                            <nav>
+                                <a href="">Services</a>
+                                <a href="">Réalisations</a>
+                                <a href="">Contact</a>
+                            </nav>
+                        </div>
+                    </header>
+
+                    <main>
+                        <div class="row">
+                            <div class="column">
+                                <p>Branding | Image making</p>
+                                <h1>Studio Aline<br>Graphik</h1>
+                                <p>Des identités visuelles qui marquent les esprits</p>
+                                <a href="" class="btn">Demander un devis</a>
+                            </div>
+
+                            <div>
+                                <img src="Assets/HeaderImage.png" alt="">
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
     </Section>
 
-    <Section>
+    <Section class="container padding">
         <h2>Services</h2>
 
         <div class="row">
-            <div>
-                <img src="Assets/Service/service1.png" alt="">
+            <div class="center column">
+                <img src="Assets/Service/service1.png" class="width">
                 <h3>Identité de marque</h3>
-                <p></p>
+                <p>Création de logos, palettes
+                    de couleurs et chartes
+                    graphiques sur mesure pour
+                    donner une personnalité
+                    forte à votre marque.</p>
             </div>
-            <div>
-                <img src="Assets/Service/service3.png" alt="">
+            <div class="center column">
+                <img src="Assets/Service/service3.png" class="width">
                 <h3>Design d'interface</h3>
-                <p></p>
+                <p>Conception d’interfaces web
+                    et mobiles esthétiques,
+                    intuitives et cohérentes
+                    avec votre univers visuel.</p>
             </div>
-            <div>
-                <img src="Assets/Service/service2.png" alt="">
+            <div class="center column">
+                <img src="Assets/Service/service2.png" class="width">
                 <h3>Visuels multisupport</h3>
-                <p></p>
+                <p>Déclinaison de votre identité
+                    sur des supports imprimés
+                    ou numériques : cartes de
+                    visite, affiches, plaquettes,
+                    réseaux sociaux, etc.</p>
             </div>
         </div>
     </Section>
 
-    <Section>
-        <div class="row">
-            <img src="Assets/logoMarque/google.png" alt="">
-            <img src="Assets/logoMarque/nike.png" alt="">
-            <img src="Assets/logoMarque/samsung.png" alt="">
-            <img src="Assets/logoMarque/apple.png" alt="">
-            <img src="Assets/logoMarque/addids.png" alt="">
+    <Section class="container width_noir">
+        <div class="row around" id="padding_block">
+            <img src="Assets/logoMarque/google.png">
+            <img src="Assets/logoMarque/nike.png">
+            <img src="Assets/logoMarque/samsung.png">
+            <!-- image Samsung qui bug, vu avec Joris -->
+            <img src="Assets/logoMarque/apple.png">
+            <img src="Assets/logoMarque/addids.png">
         </div>
     </Section>
 
-    <section>
+    <Section class="container padding">
         <h2>Réalisations</h2>
 
-        <div class="row">
-            <div>
-                <h3> Refonte de l'identité de Greenwave</h3>
-                <P></P>
+        <div class="row wrap pad">
+            <div class="column limit_width">
+                <img src="Assets/projets/projet6.png">
+                <h3>Refonte de l'identité de Greenwave</h3>
+                <P>Création d’un logo et d’une nouvelle
+                    charte graphique</P>
             </div>
-            <h3>Application mobile Bloom</h3>
-            <p></p>
 
-            <div>
+            <div class="column limit_width">
+                <img src="Assets/projets/projet1.png">
+                <h3>Application mobile Bloom</h3>
+                <p>Design UX/UI pour une application de
+                    bien-être. Palette douce, typographies
+                    apaisantes et navigation fluide pour
+                    une expérience relaxante.</p>
+            </div>
+
+            <div class="column limit_width">
+                <img src="Assets/projets/projet2.png">
                 <h3>Campagne visuelle Café du coin</h3>
-                <p></p>
+                <p>Création d’affiches et de visuels pour
+                    la communication d’un café de
+                    quartier. Une direction artistique
+                    vintage et conviviale.</p>
             </div>
 
-            <div>
+            <div class="column limit_width">
+                <img src="Assets/projets/projet3.png">
                 <h3>Interface e-commerce Lumi</h3>
-                <p></p>
+                <p>Refonte graphique complète d’un site
+                    e commerce dédié aux objets de
+                    décoration. Design épuré et mise en
+                    avant des produits.</p>
             </div>
 
-            <div>
+            <div class="column limit_width">
+                <img src="Assets/projets/projet4.png">
                 <h3>Affiches culturelles - Festival Eclats d'Art</h3>
-                <p></p>
+                <p>Conception d’une série d’affiches pour
+                    un festival pluridisciplinaire. Un travail
+                    sur la typographie expressive et la
+                    mise en scène de la couleur.</p>
             </div>
 
-            <div>
+            <div class="column limit_width">
+                <img src="Assets/projets/projet5.png">
                 <h3>Identité visuelle du restaurant l'Ardoise</h3>
-                <p></p>
+                <p>Création du logo, de la signalétique et
+                    des menus pour un bistrot lyonnais.
+                    Une identité chaleureuse mêlant
+                    tradition et modernité.</p>
             </div>
         </div>
     </section>
 
-    <Section>
+    <Section class="container">
         <h2>Témoignages clients</h2>
 
         <div class="row">
@@ -111,25 +163,16 @@
             <div>
                 <p></p>
 
-                <!-- card 1 -->
-                <div>
-                    <img src="" alt="">
-
-                    <div>
-                        <div>
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                            <img src="material-symbols_star-rounded (1).png" alt="">
-                        </div>
-                        <p></p>
-                    </div>
-                </div>
-
                 <!-- card 2 -->
                 <div>
-                    <p></p>
+                    <p>Aline a su comprendre
+                        parfaitement l’esprit de
+                        mon entreprise. Le logo
+                        et la charte sont
+                        superbes, modernes et
+                        cohérents. Je reçois
+                        énormément de
+                        compliments !</p>
 
                     <div>
                         <img src="" alt="">
@@ -142,7 +185,8 @@
                                 <img src="" alt="">
                                 <img src="" alt="">
                             </div>
-                            <p></p>
+                            <p>Identité visuelle de
+                                marque</p>
                         </div>
                     </div>
 
@@ -150,7 +194,13 @@
 
                 <!-- card 3 -->
                 <div>
-                    <p></p>
+                    <p>Collaboration fluide et
+                        professionnelle. Les
+                        maquettes sont
+                        élégantes et
+                        fonctionnelles, prêtes à
+                        être intégrées
+                        directement. Bravo !</p>
 
                     <div>
                         <img src="" alt="">
@@ -168,7 +218,24 @@
                     </div>
 
                 </div>
+                <!-- card 1 -->
+                <div>
+                    <img src="" alt="">
 
+                    <div>
+                        <p>Les affiches réalisées pour notre événement ont fait sensation ! Un grand sens du détail et
+                            une excellente compréhension de notre public.</p>
+                        <div>
+                            <img src="material-symbols_star-rounded (1).png" alt="">
+                            <img src="material-symbols_star-rounded (1).png" alt="">
+                            <img src="material-symbols_star-rounded (1).png" alt="">
+                            <img src="material-symbols_star-rounded (1).png" alt="">
+                            <img src="material-symbols_star-rounded (1).png" alt="">
+                        </div>
+                        <p>Supports de
+                            communication</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -178,7 +245,7 @@
     </main>
 
     <footer>
-        <section>
+        <section class="container">
             <h2>Prêts à travailler ensemble ?</h2>
 
             <div>
@@ -192,9 +259,9 @@
                         <img src="" alt="">
                     </div>
                 </div>
-                <form>
-                    <input type="Nom">
-                    <input type="Téléphone">
+                <form class="column">
+                    <input type="text" placeholder="Nom">
+                    <input type="text" placeholder="Téléphone">
                     <a href="">Envoyer</a>
                 </form>
             </div>
